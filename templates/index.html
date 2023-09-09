@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CybGPT</title>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+              rel="stylesheet">
+        <style>
+        .chat-body {
+            width: 550px;
+            margin: 50px auto;
+        }
+        .card-body {
+            background-color: #333;
+            color: #fff;
+            border-radius: 10px;
+        }
+        .server-message {
+            background-color: #444;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            white-space: pre-line;
+        }
+        .client-message {
+            background-color: #555;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .form-inline {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-control {
+            width: 80%;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            margin-right: 10px;
+        }
+        #send {
+            background-color: #4C4CFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+        }
+        .form-message {
+          margin-top: 10px;
+        }
+        #person-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #image-container {
+            width: 100%;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        #person-image {
+            max-width: 200px; /* Adjust as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+
+        </style>
+
+
+
+        <script>
+            const personaNames = {
+            "norbert_wiener": "Norbert Wiener",
+            "w_ross_ashby": "W. Ross Ashby",
+            "warren_weaver": "Warren Weaver",
+            "warren_s_mcculloch": "Warren S. McCulloch",
+            "walter_cannon": "Walter Cannon",
+            "john_von_neumann": "John von Neumann",
+            "gregory_bateson": "Gregory Bateson",
+            "heinz_von_foerster": "Heinz von Foerster",
+            "hsue_shen_tsien": "Hsue-Shen Tsien",
+            "claude_shannon": "Claude Shannon",
+            "ernst_von_glasersfeld": "Ernst von Glasersfeld",
+            "russell_ackoff": "Russell Ackoff",
+            "stafford_beer": "Stafford Beer",
+            "gordon_pask": "Gordon Pask",
+            "humberto_maturana": "Humberto Maturana"
+            };
+
+        var selectedPersonEndpoint = document.getElementById('selectPerson').value;
+        function pingBackend() {
+            // Define the endpoint
+            var selectedPersonEndpoint = document.getElementById('selectPerson').value;
+            var endpoint = "https://gpt-thor.ngrok.io/ping/" + selectedPersonEndpoint;
+
+            // Fetch the endpoint
+            fetch(endpoint)
+                .then(response => response.json())
+                .then(data => console.log(data));
+        }
+
+        var ws;
+
+        // Function to start the conversation
+        function startConversation() {
+            var selectedPersona = document.getElementById('selectPerson').value;
+            var endpoint = "wss://gpt-thor.ngrok.io/ws/" + selectedPersona;
+            ws = new WebSocket(endpoint);
+             // Receive message from server word by word. Display the words as they are received.
+        ws.onmessage = function (event) {
+            var messages = document.getElementById('messages');
+            var data = JSON.parse(event.data);
+
+            var selectedPersona = document.getElementById('selectPerson').value;
+            const personaName = personaNames[selectedPersona];
+
+            if (data.sender === "bot") {
+            if (data.type === "start") {
+                var header = document.getElementById('header');
+                header.innerHTML = personaName + " is computing an answer...";
+
+                var div = document.createElement('div');
+                div.className = 'server-message';
+                var p = document.createElement('p');
+                p.innerHTML = "<strong>" + personaName + ": " + "</strong>";
+
+                div.appendChild(p);
+                messages.appendChild(div);
+            } else if (data.type === "stream") {
+                var header = document.getElementById('header');
+                header.innerHTML = personaName + " is typing...";
+                var p = messages.lastChild.lastChild;
+                p.innerHTML += data.message;
+
+            } else if (data.type === "info") {
+                var header = document.getElementById('header');
+                header.innerHTML = data.message;
+            } else if (data.type === "end") {
+                var header = document.getElementById('header');
+                header.innerHTML = "Ask a question";
+                var button = document.getElementById('send');
+                button.innerHTML = "Send";
+                button.disabled = false;
+            } else if (data.type === "error") {
+                var header = document.getElementById('header');
+                header.innerHTML = "Ask a question";
+                var button = document.getElementById('send');
+                button.innerHTML = "Send";
+                button.disabled = false;
+                var p = messages.lastChild.lastChild;
+                p.innerHTML += data.message;
+            }
+        } else {
+            var div = document.createElement('div');
+            div.className = 'client-message';
+            var p = document.createElement('p');
+            p.innerHTML = "<strong>" + "You: " + "</strong>";
+            p.innerHTML += data.message;
+            div.appendChild(p);
+            messages.appendChild(div);
+        }
+
+
+        // Scroll to the bottom of the chat
+        messages.scrollTop = messages.scrollHeight;
+        };
+        }
+        
+       
+        // Send message to server
+          // Send message to server
+          function sendMessage(event) {
+            event.preventDefault();
+            var message = document.getElementById('messageText').value;
+            if (message === "") {
+                return;
+            }
+            ws.send(message);
+            document.getElementById('messageText').value = "";
+
+            // Turn the button into a loading button
+            var button = document.getElementById('send');
+            button.innerHTML = "Loading...";
+            button.disabled = true;
+        }
+
+        </script>
+    </head>
+    <!-- Add this just before your form -->
+
+    <body class="bg-black">
+        <div class="flex justify-center mt-10 mb-5">
+            <select id="selectPerson" onchange="updateTitle(); fetchImage();" class="py-2 px-4 bg-gray-800 text-white rounded-lg shadow-lg">               
+                <option value="" disabled selected>Select a persona</option>
+                <option value="norbert_wiener">Norbert Wiener</option>
+                <option value="w_ross_ashby">W. Ross Ashby</option>
+                <option value="warren_weaver">Warren Weaver</option>
+                <option value="warren_s_mcculloch">Warren S. McCulloch</option>
+                <option value="walter_cannon">Walter Cannon</option>
+                <option value="john_von_neumann">John von Neumann</option>
+                <option value="gregory_bateson">Gregory Bateson</option>
+                <option value="heinz_von_foerster">Heinz von Foerster</option>
+                <option value="hsue_shen_tsien">Hsue-Shen Tsien</option>
+                <option value="claude_shannon">Claude Shannon</option>
+                <option value="ernst_von_glasersfeld">Ernst von Glasersfeld</option>
+                <option value="russell_ackoff">Russell Ackoff</option>
+                <option value="stafford_beer">Stafford Beer</option>
+                <option value="gordon_pask">Gordon Pask</option>
+                <option value="humberto_maturana">Humberto Maturana</option>
+            </select>
+            </div>
+
+            <div class="flex justify-center mb-5">
+                <div id="image-container" class="text-center">
+                    <img id="person-image" src="" alt="Person Image" class="mx-auto" />
+                </div>
+            </div>
+
+        
+        <div class="chat-body card">
+            <div class="card-body p-5">
+               <!--- <button onclick="startConversation()">Start conversation</button> -->
+
+               <h4 class="card-title text-center text-xl font-medium" id="cardTitle">Select a persona from the dropdown menu </h4>
+               <p class="card-text text-center text-sm" id="header">Introduce yourself</p>
+               <p class="card-text text-center text-sm" id="header">Ask questions and learn from the masters!</p>
+                <hr class="border-gray-500 mb-5" style="margin-top: 20px;">
+                <div id="messages" class="overflow-auto" style="max-height: 500px;"></div>
+                
+                <form action=""
+                      class="form-inline mt-5"
+                      id="chat-form"
+                      onsubmit="sendMessage(event)">
+                      
+                    <input type="text"
+                           class="form-control"
+                           placeholder="Write your question"
+                           id="messageText">
+                    <button id="send" type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </div>
+    </body>
+
+<script>
+    
+    function updateTitle() {
+        var selectedPersona = document.getElementById('selectPerson').value;
+        var cardTitle = document.getElementById('cardTitle');
+        
+        var titles = {
+        "walter_cannon": "Chat with Walter Cannon about Cybernetics (or explore more specific topics such as Homeostasis)",
+        "norbert_wiener": "Chat with Norbert Wiener about Cybernetics",
+        "warren_weaver": "Chat with Warren Weaver about Cybernetics (or delve deeper into Information Theory)",
+        "warren_s_mcculloch": "Chat with Warren S. McCulloch about Cybernetics (or learn about his role as a Macy Meetings organizer)",
+        "w_ross_ashby": "Chat with W. Ross Ashby about Cybernetics (or explore topics like Homeostasis, Self-organization, or Ashby’s Law)",
+        "john_von_neumann": "Chat with John von Neumann about Cybernetics (or discuss his contributions as a Macy mathematician)",
+        "gregory_bateson": "Chat with Gregory Bateson about Cybernetics (or learn more about Mind Cybernetics)",
+        "heinz_von_foerster": "Chat with Heinz von Foerster about Cybernetics (or explore Constructivism or his role as a BCL director)",
+        "hsue_shen_tsien": "Chat with Hsue-Shen Tsien about Cybernetics (or discuss topics like Engineering Cybernetics and his role in initiating JPL)",
+        "claude_shannon": "Chat with Claude Shannon about Cybernetics (or dive into Information Theory)",
+        "ernst_von_glasersfeld": "Chat with Ernst von Glasersfeld about Cybernetics (or learn more about Radical Constructivism)",
+        "russell_ackoff": "Chat with Russell Ackoff about Cybernetics (or explore the field of System Thinking)",
+        "stafford_beer": "Chat with Stafford Beer about Cybernetics (or delve deeper into Management Cybernetics)",
+        "gordon_pask": "Chat with Gordon Pask about Cybernetics (or learn more about his Conversation Theory)",
+        "humberto_maturana": "Chat with Humberto Maturana about Cybernetics (or discuss his concept of Autopoiesis)"
+        };
+        
+        cardTitle.innerHTML = titles[selectedPersona] || "Select a persona to chat with about Cybernetics";
+        
+        startConversation();
+    }
+
+    async function fetchImage() {
+    const selectPerson = document.getElementById('selectPerson');
+    const selectedValue = selectPerson.value;
+    try {
+        const response = await fetch(`https://gpt-thor.ngrok.io/cybernetician/${selectedValue}`);
+        const blob = await response.blob();
+        document.getElementById('person-image').src = URL.createObjectURL(blob);
+    } catch (error) {
+        console.error('Error fetching the image:', error);
+    }
+}
+
+
+
+
+</script>
+
+</html>

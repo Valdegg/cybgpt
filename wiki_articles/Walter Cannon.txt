@@ -1,0 +1,66 @@
+Walter Bradford Cannon (October 19, 1871 – October 1, 1945) was an American physiologist, professor and chairman of the Department of Physiology at Harvard Medical School. He coined the term "fight or flight response", and developed the theory of homeostasis. He popularized his theories in his book The Wisdom of the Body, first published in 1932.
+
+
+== Life and career ==
+Cannon was born on October 19, 1871, in Prairie du Chien, Wisconsin, the son of Colbert Hanchett Cannon and his wife Wilma Denio. His sister Ida Maud Cannon (1877-1960) became a noted hospital social worker at Massachusetts General Hospital.
+In his autobiography The Way of an Investigator, Cannon counts himself among the descendants of Jacques de Noyon, a French Canadian explorer and coureur des bois. His Calvinist family was intellectually active, including readings from James Martineau, John Fiske (philosopher), and James Freeman Clarke. Cannon's curiosity also led him to Thomas Henry Huxley, John Tyndall, George Henry Lewes, and William Kingdon Clifford.  A high school teacher, Mary Jeannette Newson, became his mentor. "Miss May" Newson motivated him and helped him take his academic skills into Harvard University in 1892.Upon finishing his undergraduate studies in 1896, he entered Harvard Medical School. He started using x-rays to study the physiology of digestion while working with Henry P. Bowditch. In 1900 he received his medical degree.
+After graduation, Cannon was hired by William Townsend Porter at Harvard as an instructor in the Department of Physiology while continuing his study of digestion. Cannon was promoted to an assistant professor of physiology in 1902. He was a close friend of the physicist, G. W. Pierce, and together they founded the Wicht Club with other young instructors for social and professional purposes. In 1906, Cannon had succeeded Bowditch as the Higginson Professor and chairman of the Department of Physiology at Harvard Medical School until 1942. From 1914 to 1916, Cannon was also President of the American Physiological Society.He was married to Cornelia James Cannon, a best-selling author and feminist reformer. On July 19, 1901, during their honeymoon in Montana, they were the first people to reach the summit of the unclimbed southwest peak (2657 m or 8716 ft) of Goat Mountain, between Lake McDonald and Logan Pass. That area is now Glacier National Park. The peak was subsequently named, Mount Cannon, by the United States Geological Survey The couple had five children; A son, Dr. Bradford Cannon, a military plastic surgeon and radiation researcher. The daughters were Wilma Cannon Fairbank (who was married to John K. Fairbank), Linda Cannon Burgess, Helen Cannon Bond and Marian Cannon Schlesinger, a painter and author living in Cambridge, Massachusetts.
+His philosophy of life may be inferred by his actions and his statements. Born into a Calvinistic family, he broke away from religious authoritarianism and achieved an independence from his prior dogma. Later in life he states that naturally occurring events are what makes for a useful end. He took on the role of a naturalist where believed that the body and mind are inseparable as an organismic unit. The explanations of his work should enable man to live more wisely, happily, and intelligently without the interjection of supernatural interference.E. Digby Baltzell said that Dr. Cannon was once offered a job at the Mayo Clinic for twice his Harvard salary. Cannon declined, saying "I don't need twice as much money. All I need is fifty cents for a haircut once a month, and fifty cents a day to get lunch."Cannon supported animal experimentation and opposed the arguments of anti-vivisectionists. In 1911, he authored a booklet for the American Medical Association criticizing the arguments of anti-vivisectionists.Walter Cannon died on October 1, 1945 in Franklin, New Hampshire.
+
+
+== Work ==
+Walter Cannon began his career in science as a Harvard undergraduate in the year 1892. Henry Pickering Bowditch, who had worked with Claude Bernard, directed the laboratory in physiology at Harvard. Here Cannon began his research: he used the newly discovered x-rays to study the mechanism of swallowing and the motility of the stomach. Within his first experiments he was able to watch the course of a button down a dog's esophagus. He says in his autobiography, The Way of an Investigator, “The whole purpose of my effort was to see the peristaltic waves to learn their effects. Only after some time did I note that the absence of activity was accompanied by signs of perturbation, and when serenity was restored the waves promptly reappeared.”He demonstrated deglutition in a goose at the APS meeting in December 1896 and published his first paper on this research in the first issue of the American Journal of Physiology in January 1898.In 1945 Cannon summarized his career in physiology by describing his focus at different ages:
+Age 26 – 40: digestion and the bismuth meal
+Age 40 – 46: bodily effects of emotional excitement
+Age 46 – 51: wound shock investigations
+Age 51 – 59: stable states of the organism
+Age 59 – 68: chemical mediation of nerve impulses (collaboration with Arturo Rosenblueth)
+Age 68 + : chemical sensitivity of nerve-isolated organs
+
+
+=== Scientific contributions ===
+Use of salts of heavy metals in X-Rays
+He was one of the first researchers to mix salts of heavy metals (including bismuth subnitrate, bismuth oxychloride, and barium sulfate) into foodstuffs in order to improve the contrast of x-ray images of the digestive tract. The barium meal is a modern derivative of this research.Fight or flight
+In 1915, he coined the term fight or flight to describe an animal's response to threats in Bodily Changes in Pain, Hunger, Fear and Rage: An Account of Recent Researches into the Function of Emotional Excitement. He asserted that not only physical emergencies, such as blood loss from trauma, but also psychological emergencies, such as antagonistic encounters between members of the same species, evoke release of adrenaline into the bloodstream.As per Cannon, adrenaline exerts several important effects in different body organs, all of which maintain homeostasis in fight-or-flight situations. For example, in the skeletal muscle of the limbs, adrenaline relaxes blood vessels which increases local blood flow. Adrenaline constricts blood vessels in the skin and minimizes blood loss from physical trauma. Adrenaline also releases the key metabolic fuel, glucose, from the liver into the bloodstream. 
+However, the fact that aggressive attack and fearful escape both involve adrenaline release into the bloodstream does not imply an equivalence of “fight” with “flight” from a physiological or biochemical point of view.
+
+Wound shock
+As a military physician in World War I he discovered that the blood of shocked men was acidic. As a member of the British Medical Research Council's Special Committee on Shock and Allied Conditions, he advocated treating shocked wounded by infusing sodium bicarbonate to neutralize the acid.  He and William Bayliss infused acid into an anesthetized cat, which died. However, a second trial done with Bayliss and Henry Dale failed to produce shock. Shock was successfully treated by infusing saline containing some larger molecules.Homeostasis
+He developed the concept of homeostasis from the earlier idea of Claude Bernard of milieu interieur, and popularized it in his book The Wisdom of the Body. Cannon presented four tentative propositions to describe the general features of homeostasis:
+Constancy in an open system that requires mechanisms that act to maintain this system, just like our bodies. Cannon based this proposition on insights of steady states such as glucose concentrations, body temperature and acid-base balance.
+Steady-state conditions require that any tendency toward change automatically meets with factors that resist change. An increase in blood sugar results in thirst as the body attempts to dilute the concentration of sugar in the extracellular fluid.
+The regulating system that determines the homeostatic state consists of many cooperating mechanisms acting simultaneously or successively. Blood sugar is regulated by insulin, glucagons, and other hormones that control its release from the liver or its uptake by the tissues.
+Homeostasis does not occur by chance, but is the result of organized self-government.The Sympathoadrenal SystemCannon proposed the existence and functional unity of the sympathoadrenal (or “sympathoadrenomedullary” or “sympathico-adrenal”) system. He theorized that the sympathetic nervous system and the adrenal gland work together as a unit to maintain homeostasis in emergencies. To identify and quantify adrenaline release during stress, beginning in about 1919 Cannon exploited an ingenious experimental setup. He would surgically excise the nerves supplying the heart of a laboratory animal such as a dog or cat. Then he would subject the animal to a stressor and record the heart rate response. With the nerves to the heart removed, he could deduce that if the heart rate increased in response to the perturbation, then the increase in heart rate must have resulted from the actions of a hormone. Finally, he would compare the results of an animal with intact adrenal glands with those in an animal from which he had removed the adrenal glands. From the difference in the heart rate between the two animals, he could further infer that the hormone responsible for the increase in heart rate came from the adrenal glands. Moreover, the amount of increase in the heart rate provided a measure of the amount of hormone released. Cannon became so convinced that the sympathetic nervous system and adrenal gland functioned as a unit that in the 1930s that he formally proposed that the sympathetic nervous system uses the same chemical messenger—adrenaline—as does the adrenal gland.  Cannon’s notion of a unitary sympathoadrenal system persists to this day. Researchers in the area have come to question the validity of the notion of a unitary sympathoadrenal system, although clinicians often continue to lump together the two components.
+
+Cannon-Bard theory
+Cannon developed the Cannon-Bard theory with physiologist Philip Bard to try to explain why people feel emotions first and then act upon them.Dry mouth
+He put forward the Dry Mouth Hypothesis, stating that people get thirsty because their mouths get dry. He did an experiment on two dogs. He made incisions in their throats and inserted small tubes. Any water swallowed would go through their mouths and out by the tubes, never reaching their stomachs. He found out that these dogs would lap up the same amount of water as control dogs.
+
+
+== Publication ==
+Cannon wrote several books and articles.
+
+1910, A Laboratory Course in Physiology, Harvard University Press 6th ed. 1927.
+1910, 'Medical Control of Vivisection'
+1911, Some Characteristics of Antivivisection Literature
+1911, The Mechanical Factors of Digestion
+1915, Bodily Changes in Pain, Hunger, Fear and Rage
+1920, Bodily Changes in Pain, Hunger, Fear and Rage (2 ed.)
+1923, Traumatic Shock
+1926, 'Physiological Regulation of Normal States'
+1932, The Wisdom of the Body
+1933, Some modern extensions of Beaumont's studies on Alexis St. Martin
+1937, Digestion and Health
+1937, Autonomic Neuro-effector Systems, with Arturo Rosenblueth
+1942, '"Voodoo" Death'
+1945, The Way of an Investigator: a scientist's experiences in medical research
+
+
+== Further reading ==
+Benison, Saul A., Clifford Barger, Elin L. Wolfe (1987) Walter B. Cannon: The Life and Times of a Young Scientist. ISBN 0674945808
+Cannon, Bradford. "Walter Bradford Cannon: Reflections on the Man and His Contributions". International Journal of Stress Management, vol. 1, no. 2, 1994.
+Kuznick, Peter. "The Birth of Scientific Activism". Bulletin of the Atomic Scientists, December 1988
+Schlesinger, Marian Cannon. Snatched from Oblivion: A Cambridge Memoir. Boston: Little, Brown and Company, 1979.
+Wolfe, Elin L., A. Clifford Barger, Saul Benison (2000)  Walter B. Cannon, Science and Society. ISBN 0674002512
+
+

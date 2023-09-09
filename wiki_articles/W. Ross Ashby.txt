@@ -1,0 +1,88 @@
+William Ross Ashby (6 September 1903 – 15 November 1972) was an English psychiatrist and a pioneer in cybernetics, the study of the science of communications and automatic control systems in both machines and living things. His first name was not used: he was known as Ross Ashby.: 91 His two books, Design for a Brain and An Introduction to Cybernetics, introduced exact and logical thinking into the brand new discipline of cybernetics and were highly influential.: 93  These "missionary works" along with his technical contributions made Ashby "the major theoretician of cybernetics after  Wiener".: 28 
+
+
+== Early life and education ==
+William Ross Ashby was born in 1903 in London, where his father was working at an advertising agency. From  1921 he studied at Sidney Sussex College, Cambridge, where he received his B.A. in 1924 and his M.B. and B.Ch. in 1928. From 1924 to 1928 he worked at St. Bartholomew's Hospital in London.  Later on he also received a Diploma in Psychological Medicine in 1931, and an M.A. 1930 and M.D. from Cambridge in 1935.: 91 
+
+
+== Career ==
+Ashby started working in 1930 as a Clinical Psychiatrist at the London County Council. From 1936 until 1947 he was a Research Pathologist at St Andrew's Hospital in Northampton in England. From 1945 to 1947 he served in India where he was a Major in the Royal Army Medical Corps.: 92 When he returned to England, he served as Director of Research of the Barnwood House Hospital in Gloucester from 1947 until 1959. For a year, he was Director of the Burden Neurological Institute in Bristol. In 1960, he went to the United States and became Professor, Depts. of Biophysics and Electrical Engineering, University of Illinois at Urbana–Champaign, until his retirement in 1970.Ashby was president of the Society for General Systems Research from 1962 to 1964. After retiring in August 1970, he became an Honorary Professorial Fellow at the University of Wales in 1970 and a fellow of the Royal College of Psychiatrists in 1971. In June 1972 he was diagnosed with an inoperable brain tumor, and he died on 15 November.
+
+
+== Work ==
+Despite being widely influential within cybernetics, systems theory and, more recently, complex systems, Ashby is not as well known as many of the notable scientists his work influenced, including Herbert A. Simon, Norbert Wiener, Ludwig von Bertalanffy, Stafford Beer, Stanley Milgram, and Stuart Kauffman.
+
+
+=== Journal ===
+Ashby kept a journal for over 44 years in which he recorded his ideas about new theories. He started May 1928, when he was medical student at St. Bartholomew's Hospital in London. Over the years, he wrote down a series of 25 volumes totaling 7,189 pages. In 2003, these journals were given to The British Library, London, and in 2008, they were made available online as The W. Ross Ashby Digital Archive. Ashby initially considered his theorizing a private hobby, and his later decision to begin publishing his work caused him some distress. He wrote: 
+My fear is now that I may become conspicuous, for a book of mine is in the press. For this sort of success I have no liking. My ambitions are vague—someday to produce something faultless.: 97 
+
+Ashby found writing so difficult that he took correspondence courses in "Effective English and Personal Efficiency" to prepare to write his first book.
+
+
+=== Adaptation ===
+Ashby was interested in  mechanistic explanations for adaptive behavior, especially in the brain. By 1941, he had developed a coherent theory and written a 197-page booklet, titled "The Origin of Adaptation".: 99  This hand-written monograph was made publicly available in January 2021. In it, he expressed his opinion that "there is an abstract science of organisation, in the sense that there are laws, theories and discoveries to be made about organisation as such without asking what it is that is organised.": 35 In 1948 Ashby built a machine, the homeostat, to demonstrate his theories.: 98  The machine used a simple mechanical process to return to  equilibrium states after disturbances at its input. Earlier, in 1946, Alan Turing had written a letter to Ashby suggesting that Ashby use Turing's Automatic Computing Engine (ACE) for his experiments instead of building a special machine. Norbert Wiener, describing the appearance of purposeful behavior in the Homeostat's random search for equilibrium, called it "one of the great philosophical contributions of the present day". Ashby's first book, Design for a Brain, was published in 1952 and recapitulated this line of research.
+
+
+=== Cybernetics ===
+Ashby was one of the original members of the Ratio Club, a small informal dining club of young psychologists, physiologists, mathematicians and engineers who met to discuss issues in cybernetics. The club was founded in 1949 by the neurologist John Bates and continued to meet until 1958.
+The title of his book An Introduction to Cybernetics popularised the usage of the term 'cybernetics' to refer to self-regulating systems, originally coined by Norbert Wiener in Cybernetics. The book gave accounts of homeostasis, adaptation, memory and  foresight in living organisms in Ashby's determinist, mechanist terms.Ashby's 1964 paper Constraint Analysis of Many-Dimensional Relations began the study of reconstructability analysis, a multivariate systems modeling methodology based on set theory and information theory, which would later be developed by Klaus Krippendorff, George Klir, and others.: 287–288 In 1970, Ashby collaborated on simulation experiments regarding the stability of large interconnected systems. This work inspired Robert May's studies of stability and complexity in model ecosystems.
+
+
+=== Variety ===
+In An Introduction to Cybernetics, Ashby used set cardinality, or variety, as a measure of information. With this he formulated his Law of Requisite Variety. Mathematically, the law is a statement about how "in a two-person game the variety possible is determined by the number of possible choices open to the two players". When regulation is seen as a game between a regulator 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+   and source of disturbances 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  , "only variety in 
+  
+    
+      
+        R
+      
+    
+    {\displaystyle R}
+   can force down the variety due to 
+  
+    
+      
+        D
+      
+    
+    {\displaystyle D}
+  ; only variety can destroy variety.": 207 In work with Ashby, Conant augmented this with the "Good Regulator theorem" stating that "every good regulator of a system must be a model of that system". Stafford Beer applied the law of variety to the practice of management, founding management cybernetics and developing the Viable System Model.A popular paraphrasing of the law is "only complexity absorbs complexity". However, while a web search reveals many attributions to Ashby, it appears such attribution is in error. The phrase is not listed by the Cybernetics Society.
+
+
+== Legacy ==
+The Papers of William Ross Ashby are housed at the British Library. The papers can be accessed through the British Library catalogue.On 4–6 March 2004, a W. Ross Ashby centenary conference was held at the University of Illinois at Urbana–Champaign to mark the 100th anniversary of his birth. Presenters at the conference included Stuart Kauffman, Stephen Wolfram and George Klir. In February 2009, a special issue of the International Journal of General Systems was specifically devoted to Ashby and his work, containing papers from leading scholars such as Klaus Krippendorff, Stuart Umpleby and Kevin Warwick.
+Ashby's work on the law of requisite variety has influenced scholars within the field of management studies.
+
+
+== Publications ==
+Books1952. Design for a Brain, Chapman & Hall.
+1956. An Introduction to Cybernetics, Chapman & Hall.
+1981. Conant, Roger C. (ed.). Mechanisms of Intelligence: Ross Ashby's Writings on Cybernetics, Intersystems Publishers.Articles, a selection1940. "Adaptiveness and equilibrium". In: J. Ment. Sci. 86, 478.
+1945. "Effects of control on stability". In: Nature, London, 155, 242–243.
+1946. "The behavioural properties of systems in equilibrium". In: Amer. J. Psychol. 59, 682–686.
+1947. "Principles of the Self-Organizing Dynamic System". In: Journal of General Psychology (1947). volume 37, pages 125–128.
+1948. "The homeostat". In: Electron, 20, 380.
+1962. "Principles of the Self-Organizing System". In: Heinz Von Foerster and George W. Zopf, Jr. (eds.), Principles of Self-Organization (Sponsored by Information Systems Branch, US Office of Naval Research). Republished as a PDF in Emergence: Complexity and Organization (E:CO) Special Double Issue Vol. 6, Nos. 1–2 2004, pp. 102–126.
+
+
+== Further reading ==
+British Library Untold lives blog, 20 April 2016: Pioneering cybernetics: an introduction to W Ross Ashby.
+Asaro, Peter (2008). "From Mechanisms of Adaptation to Intelligence Amplifiers: The Philosophy of W. Ross Ashby," in Michael Wheeler, Philip Husbands and Owen Holland (eds.) The Mechanical Mind in History, Cambridge, Massachusetts: MIT Press.
+
+

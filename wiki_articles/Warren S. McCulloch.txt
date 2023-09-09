@@ -1,0 +1,43 @@
+Warren Sturgis McCulloch (November 16, 1898 – September 24, 1969) was an American neurophysiologist and cybernetician, known for his work on the foundation for certain brain theories and his contribution to the cybernetics movement. Along with Walter Pitts, McCulloch created computational models based on mathematical algorithms called threshold logic which split the inquiry into two distinct approaches, one approach focused on biological processes in the brain and the other focused on the application of neural networks to artificial intelligence.
+
+
+== Biography ==
+Warren Sturgis McCulloch was born in Orange, New Jersey, in 1898. His brother was a chemical engineer and Warren was originally planning to join the Christian ministry. As a teenager he was associated with the theologians Henry Sloane Coffin, Harry Emerson Fosdick, Herman Karl Wilhelm Kumm and Julian F. Hecker. He was also mentored by the Quaker, Rufus Jones. He attended Haverford College and studied philosophy and psychology at Yale University, where he received a Bachelor of Arts degree in 1921.  He continued to study psychology at Columbia and received a Master of Arts degree in 1923. Receiving his MD in 1927 from the Columbia University College of Physicians and Surgeons in New York, he undertook an internship at Bellevue Hospital, New York. Then he worked under Eilhard von Domarus  at the Rockland State Hospital for the Insane. He returned to academia in 1934.  He worked at the Laboratory for Neurophysiology at Yale University from 1934 to 1941.
+In 1941 he moved to Chicago and joined the Department of Psychiatry at the University of Illinois at Chicago, where he was a professor of psychiatry, as well as the director of the Illinois Neuropsychiatric Institute until 1951. From 1952 he worked at the Massachusetts Institute of Technology in Cambridge, Massachusetts with Norbert Wiener. He was a founding member of the American Society for Cybernetics and its second president during 1967–1968.  He was a mentor to the British operations research pioneer Stafford Beer.
+McCulloch had a range of interests and talents. In addition to his scientific contributions he wrote poetry (sonnets), and he designed and engineered buildings and a dam at his farm in Old Lyme, Connecticut.
+McCulloch married Ruth Metzger, known as 'Rook', in 1924 and they had three children. He died in Cambridge in 1969.
+
+
+== Work ==
+He is remembered for his work with Joannes Gregorius Dusser de Barenne from Yale and later with Walter Pitts from the University of Chicago. He provided the foundation for certain brain theories in a number of classic papers, including "A Logical Calculus of the Ideas Immanent in Nervous Activity" (1943) and "How We Know Universals:  The Perception of Auditory and Visual Forms" (1947), both published in the Bulletin of Mathematical Biophysics. The former is "widely credited with being a seminal contribution to neural network theory, the theory of automata, the theory of computation, and cybernetics".McCulloch was the chair of the set of Macy conferences dedicated to Cybernetics. These, greatly due to the diversity of the background of the participants McCulloch brought in, became the foundation for the field.
+
+
+=== Neural network modelling ===
+In the 1943 paper McCulloch and Pitts attempted to demonstrate that a Turing machine program could be implemented in a finite network of formal neurons (in the event, the Turing Machine contains their model of the brain, but the converse is not true), that the neuron was the base logic unit of the brain. In the 1947 paper they offered approaches to designing "nervous nets" to recognize visual inputs despite changes in orientation or size.
+From 1952 McCulloch worked at the Research Laboratory of Electronics at MIT, working primarily on neural network modelling. His team examined the visual system of the frog in consideration of McCulloch's 1947 paper, discovering that the eye provides the brain with information that is already, to a degree, organized and interpreted, instead of simply transmitting an image.
+
+
+=== Reticular formation ===
+McCulloch also posited the concept of "poker chip" reticular formations as to how the brain deals with contradictory information in a democratic, somatotopical neural network. His principle of  "Redundancy of Potential Command" was developed by von Foerster and Pask in their study of self-organization and by Pask in his Conversation Theory and Interactions of Actors Theory.
+
+
+== Publications ==
+McCulloch wrote a book and several articles:
+1965, Embodiments of Mind. MIT Press, Cambridge,
+1993, The Complete Works of Warren S. McCulloch. Intersystems Publications: Salinas, CA.Articles, a selection:
+
+1943, "A Logical Calculus of the Ideas Immanent in Nervous Activity". With Walter Pitts. In: Bulletin of Mathematical Biophysics Vol 5, pp 115–133.
+1945, "A Heterarchy of Values Determined by the Topology of Nervous Nets". In: Bulletin of Mathematical Biophysics, 7, 1945, 89–93.
+1959, "What The Frog's Eye Tells The Frog's Brain". With Jerome Lettvin, H.R. Maturana and W.H. Pitts [It is widely known that the actual authors of this work were only Lettvin and Maturana.] In: Proc. of the I. R. E. Vol 47 (11).
+1969, "Recollections of the Many Sources of Cybernetics", published in: ASC FORUM Volume VI, Number 2 -Summer 1974.Papers published by the Chicago Literary Club:
+
+1945, "One Word After Another".
+1959, "The Past of a Delusion".
+1959, "The Natural Fit".
+
+
+== Further reading ==
+
+Rebel Genius: Warren S. McCulloch's Transdisciplinary Life in Science (Cambridge, MA: MIT Press, 2016).
+New York Times (1969), Obituaries, September 25.
+Crevier, Daniel (1993), AI: The Tumultuous Search for Artificial Intelligence, BasicBooks, New York, NY.
