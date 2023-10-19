@@ -1,5 +1,5 @@
-python3 kill_process.py ngrok uvicorn
-python3 kill_process.py ngrok uvicorn
+python3 kill_process.py ngrok 8001
+python3 kill_process.py uvicorn 8001
 
 sleep 2
 
