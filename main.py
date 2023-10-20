@@ -87,6 +87,9 @@ async def test_chat(request: Request):
 async def ping(persona_selected_from_dropdown):
     return {"ping": persona_selected_from_dropdown}
 
+
+from utils import make_llm, summarise_chat_history
+
 @app.websocket("/ws/{persona_selected_from_dropdown}")
 async def websocket_endpoint(websocket: WebSocket, persona_selected_from_dropdown):
     logger.info('Websocket connection opened')
@@ -95,6 +98,10 @@ async def websocket_endpoint(websocket: WebSocket, persona_selected_from_dropdow
     print(persona_selected_from_dropdown)
     cyber_chain = get_wiener_chain(stream_handler, selected_persona=persona_selected_from_dropdown    )
     logger.info('Chain loaded')
+
+    n_tokens_when_summarise = int(os.environ['N_TOKENS_WHEN_SUMMARISE'])
+    llm_summariser = make_llm(os.environ['OPENAI_LLM_SUMMARISER'])
+
     while True:
         try:
             # Receive and send back the client message
@@ -123,7 +130,14 @@ async def websocket_endpoint(websocket: WebSocket, persona_selected_from_dropdow
             with open('answer.txt', 'w') as f:
                 f.write(end_resp.message)
             # log answer 
-            logger.info(end_resp.message)
+
+
+            # if chat history is long, summarise it 
+            summarise_chat_history(cyber_chain, llm_summariser, n_tokens_when_summarise=n_tokens_when_summarise, summarisation_window=os.environ['N_TOKENS_WHEN_SUMMARISE'])
+
+
+
+
         except WebSocketDisconnect:
             logger.info("WebSocketDisconnect")
             # TODO try to reconnect with back-off
