@@ -64,7 +64,7 @@
         }
 
         #person-image {
-            max-width: 200px; /* Adjust as needed */
+            max-width: 400px; /* Adjust as needed */
             height: auto; /* Maintain aspect ratio */
         }
 
@@ -196,7 +196,8 @@
     <body class="bg-black">
         <div class="flex justify-center mt-10 mb-5">
             <select id="selectPerson" onchange="updateTitle(); fetchImage();" class="py-2 px-4 bg-gray-800 text-white rounded-lg shadow-lg">               
-                <option value="" disabled selected>Select a persona</option>
+    
+                <option value="macy_conference" selected>Select a persona</option>
                 <option value="norbert_wiener">Norbert Wiener</option>
                 <option value="w_ross_ashby">W. Ross Ashby</option>
                 <option value="warren_weaver">Warren Weaver</option>
@@ -287,6 +288,9 @@
         console.error('Error fetching the image:', error);
     }
 }
+
+// Call fetchImage when the window finishes loading
+window.onload = fetchImage;
 
 
 

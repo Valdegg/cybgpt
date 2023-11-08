@@ -64,6 +64,7 @@ cybernetician_images = {
     "walter_cannon": "wiki_images/Walter_Cannon.jpg",
     "warren_s_mcculloch": "wiki_images/Warren_S_McCulloch.png",
     "warren_weaver": "wiki_images/Warren_Weaver.jpg",
+    "macy_conference": "wiki_images/Macy_Conference.png",
 }
 
 @app.get("/cybernetician/{cybernetician_id}")
@@ -96,61 +97,62 @@ async def websocket_endpoint(websocket: WebSocket, persona_selected_from_dropdow
     await websocket.accept()
     stream_handler = StreamingLLMCallbackHandler(websocket)
     print(persona_selected_from_dropdown)
-    cyber_chain = get_wiener_chain(stream_handler, selected_persona=persona_selected_from_dropdown    )
-    logger.info('Chain loaded')
+    if persona_selected_from_dropdown != 'macy_conference':
+        cyber_chain = get_wiener_chain(stream_handler, selected_persona=persona_selected_from_dropdown    )
+        logger.info('Chain loaded')
 
-    n_tokens_when_summarise = int(os.environ['N_TOKENS_WHEN_SUMMARISE'])
-    llm_summariser = make_llm(os.environ['OPENAI_LLM_SUMMARISER'])
+        n_tokens_when_summarise = int(os.environ['N_TOKENS_WHEN_SUMMARISE'])
+        llm_summariser = make_llm(os.environ['OPENAI_LLM_SUMMARISER'])
 
-    while True:
-        try:
-            # Receive and send back the client message
-            logger.info('Waiting for message')
-            user_msg = await websocket.receive_text()
-            resp = ChatResponse(sender="human", message=user_msg, type="stream")
-            logger.info('Received message')
-            await websocket.send_json(resp.dict())
+        while True:
+            try:
+                # Receive and send back the client message
+                logger.info('Waiting for message')
+                user_msg = await websocket.receive_text()
+                resp = ChatResponse(sender="human", message=user_msg, type="stream")
+                logger.info('Received message')
+                await websocket.send_json(resp.dict())
 
-            # Construct a response
-            start_resp = ChatResponse(sender="bot", message="", type="start")  
-            await websocket.send_json(start_resp.dict())
+                # Construct a response
+                start_resp = ChatResponse(sender="bot", message="", type="start")  
+                await websocket.send_json(start_resp.dict())
 
-            # Send the message to the chain and feed the response back to the client
-            output = await cyber_chain.acall(
-                {
-                    "input": user_msg,
-                }
-            )
-            logger.info(output)
-            # Send the end-response back to the client
-            end_resp = ChatResponse(sender="bot", message="", type="end")
-            print(end_resp)
-            await websocket.send_json(end_resp.dict())
-            # save answer to txt file
-            with open('answer.txt', 'w') as f:
-                f.write(end_resp.message)
-            # log answer 
-
-
-            # if chat history is long, summarise it 
-            summarise_chat_history(cyber_chain, llm_summariser, n_tokens_when_summarise=n_tokens_when_summarise, summarisation_window=os.environ['N_TOKENS_WHEN_SUMMARISE'])
+                # Send the message to the chain and feed the response back to the client
+                output = await cyber_chain.acall(
+                    {
+                        "input": user_msg,
+                    }
+                )
+                logger.info(output)
+                # Send the end-response back to the client
+                end_resp = ChatResponse(sender="bot", message="", type="end")
+                print(end_resp)
+                await websocket.send_json(end_resp.dict())
+                # save answer to txt file
+                with open('answer.txt', 'w') as f:
+                    f.write(end_resp.message)
+                # log answer 
 
 
+                # if chat history is long, summarise it 
+                summarise_chat_history(cyber_chain, llm_summariser, n_tokens_when_summarise=n_tokens_when_summarise, summarisation_window=os.environ['N_TOKENS_WHEN_SUMMARISE'])
 
 
-        except WebSocketDisconnect:
-            logger.info("WebSocketDisconnect")
-            # TODO try to reconnect with back-off
-            break
-        except ConnectionClosedOK:
-            logger.info("ConnectionClosedOK")
-            # TODO handle this?
-            break
-        except Exception as e:
-            logging.error(e)
-            resp = ChatResponse(
-                sender="bot",
-                message="Sorry, something went wrong. Try again.",
-                type="error",
-            )
-            await websocket.send_json(resp.dict())
+
+
+            except WebSocketDisconnect:
+                logger.info("WebSocketDisconnect")
+                # TODO try to reconnect with back-off
+                break
+            except ConnectionClosedOK:
+                logger.info("ConnectionClosedOK")
+                # TODO handle this?
+                break
+            except Exception as e:
+                logging.error(e)
+                resp = ChatResponse(
+                    sender="bot",
+                    message="Sorry, something went wrong. Try again.",
+                    type="error",
+                )
+                await websocket.send_json(resp.dict())
