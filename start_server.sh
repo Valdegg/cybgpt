@@ -1,11 +1,13 @@
-python3 kill_process.py ngrok 8001
-python3 kill_process.py uvicorn 8001
+
+uvicorn_port=49152
+python3 kill_process.py ngrok "$uvicorn_port"
+python3 kill_process.py uvicorn "$uvicorn_port"
+
+./stop_ngrok_sessions.sh
 
 sleep 2
 
 # Set the port numbers
-uvicorn_port=8001
-
 
 if [ "$1" == "-online" ]; then
 
@@ -24,7 +26,7 @@ fi
 
 echo "Starting uvicorn server..."
 # Start the API
-uvicorn main:app --host 0.0.0.0 --port "$uvicorn_port" --log-config logging_config.ini > server_logs.txt 2>&1 &
+uvicorn main:app --host 0.0.0.0 --port "$uvicorn_port" --log-config logging_config.ini &
 #uvicorn api:app --reload &> server_logs.txt&
 
 UVICORN_PID=$!

@@ -49,21 +49,21 @@ templates = Jinja2Templates(directory="templates")
 
 
 cybernetician_images = {
-    "claude_shannon": "/home/valdegg/Documents/ai_projects/cyb_gpt/wiki_images/Claude_Shannon.jpg",
-    "ernst_von_glasersfeld": "/home/valdegg/Documents/ai_projects/cyb_gpt/wiki_images/Ernst_von_Glasersfeld.jpg",
-    "gordon_pask": "/home/valdegg/Documents/ai_projects/cyb_gpt/wiki_images/Gordon_Pask.gif",
-    "gregory_bateson": "/home/valdegg/Documents/ai_projects/cyb_gpt/wiki_images/Gregory_Bateson.jpg",
-    "heinz_von_foerster": "/home/valdegg/Documents/ai_projects/cyb_gpt/wiki_images/Heinz_von_Foerster.jpg",
-    "hsue_shen_tsien": "/home/valdegg/Documents/ai_projects/cyb_gpt/wiki_images/Hsue-Shen_Tsien.jpg",
-    "humberto_maturana": "/home/valdegg/Documents/ai_projects/cyb_gpt/wiki_images/Humberto_Maturana.jpg",
-    "john_von_neumann": "/home/valdegg/Documents/ai_projects/cyb_gpt/wiki_images/John_von_Neumann.gif",
-    "norbert_wiener": "/home/valdegg/Documents/ai_projects/cyb_gpt/wiki_images/Norbert_Wiener.jpg",
-    "russell_ackoff": "/home/valdegg/Documents/ai_projects/cyb_gpt/wiki_images/Russell_Ackoff.jpg",
-    "stafford_beer": "/home/valdegg/Documents/ai_projects/cyb_gpt/wiki_images/Stafford_Beer.jpg",
-    "w_ross_ashby": "/home/valdegg/Documents/ai_projects/cyb_gpt/wiki_images/W_Ross_Ashby.jpg",
-    "walter_cannon": "/home/valdegg/Documents/ai_projects/cyb_gpt/wiki_images/Walter_Cannon.jpg",
-    "warren_s_mcculloch": "/home/valdegg/Documents/ai_projects/cyb_gpt/wiki_images/Warren_S_McCulloch.png",
-    "warren_weaver": "/home/valdegg/Documents/ai_projects/cyb_gpt/wiki_images/Warren_Weaver.jpg",
+    "claude_shannon": "wiki_images/Claude_Shannon.jpg",
+    "ernst_von_glasersfeld": "wiki_images/Ernst_von_Glasersfeld.jpg",
+    "gordon_pask": "wiki_images/Gordon_Pask.gif",
+    "gregory_bateson": "wiki_images/Gregory_Bateson.jpg",
+    "heinz_von_foerster": "wiki_images/Heinz_von_Foerster.jpg",
+    "hsue_shen_tsien": "wiki_images/Hsue-Shen_Tsien.jpg",
+    "humberto_maturana": "wiki_images/Humberto_Maturana.jpg",
+    "john_von_neumann": "wiki_images/John_von_Neumann.gif",
+    "norbert_wiener": "wiki_images/Norbert_Wiener.jpg",
+    "russell_ackoff": "wiki_images/Russell_Ackoff.jpg",
+    "stafford_beer": "wiki_images/Stafford_Beer.jpg",
+    "w_ross_ashby": "wiki_images/W_Ross_Ashby.jpg",
+    "walter_cannon": "wiki_images/Walter_Cannon.jpg",
+    "warren_s_mcculloch": "wiki_images/Warren_S_McCulloch.png",
+    "warren_weaver": "wiki_images/Warren_Weaver.jpg",
 }
 
 @app.get("/cybernetician/{cybernetician_id}")
